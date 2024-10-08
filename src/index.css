@@ -1,0 +1,117 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #eff6ff;
+  gap: 10px;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+}
+
+header button {
+  border-radius: 10px;
+  background: transparent;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.5;
+}
+
+header button,
+header input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: rgb(237, 235, 235);
+}
+
+p {
+  font-size: 1em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(237, 235, 235);
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionsContainer button {
+  transition-duration: 100ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.5;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
